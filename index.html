@@ -7,16 +7,61 @@
     <link rel="stylesheet" href="style.css">
     <title>Christener Leigh's portfolio</title>
 </head>
-<body>
-      <nav class="w-full h-14 nav-bar-custom-color relative flex items-center pl-5">
-        <div class="mr-5 w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">Home</div>
-        <div class="mr-5 w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">Projects</div>
-        <div class="mr-5 w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">About</div>
-        <div class="w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">Contact</div>
+<body class="w-[1728px] h-screen relative homepage-custom-color">
+        <nav class="w-full h-14 nav-bar-custom-color relative flex items-center pl-5">
+        <a href="#home" class="mr-5 w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">Home</a>
+        <a href="#projects" class="mr-5 w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">Projects</a>
+        <a href="#about" class="mr-5 w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">About</a>
+        <a href="#contact" class="w-[97px] h-9 text-center text-white text-xl font-normal font-['Inter']">Contact</a>
     </nav>
-    <h3  class="text-4xl font-bold text-center mt-10 my-4">Hi I am Christener a web developer</h3>
-    <div class="flex justify-center">
-  <img src="propic.png" alt="profile picture" class="w-[358px] h-[517px]"/>
+  <main>
+    <section id="home">
+    <h3  class="text-4xl font-bold text-center mt-6 my-4 text-white">Hi I am Christener <br> a web developer</h3>
+    <div class="flex justify-center mt-10">
+  <img src="Images/main-page/propic.png" alt="profile picture" class="w-[358px] h-[517px]"/>
 </div>
+</section>
+
+<section id="projects" class="flex flex-col items-center justify-center mt-10">
+    <!----------------CARD-ONE--------------->
+<div class="card-one w-[558px] h-[324px] bg-black flex w-2/3 mt-10 ">
+    <div class="flex ">
+    <img class="w-[200px] h-[324px]" src="Images/bootcamp-kitchen/Main.png" />
+    <img class="w-[200px] h-[324px]" src="Images/bootcamp-kitchen/searched.png" />
+    <img class="w-[200px] h-[324px]" src="Images/bootcamp-kitchen/Responsive.png" />
+    </div>
+
+
+<div class="text-container w-1/3 flex flex-col items-center px-4">
+    <p class="text-white mt-10">"Bootcamp Kitchen" focused on encouraging healthy eating among bootcamp participants. It involved stages of ideation, design, and implementation, creating a web-based tool for dietary </p> <br>
+    <div class="flex">
+         <p class="text-white"> HTML, CSS, JavaScript, Node.js, Express, Vitest, Playwright, Figma  </p>
+          <button class="text-white"> More Information</button>
+</div>
+</div>
+</div>
+
+ <!------------------CARD-TWO-------------------->
+<div class="card-one w-[558px] h-[324px] bg-black flex w-2/3 mt-10 flex-row-reverse">
+    <div class="flex ">
+        <img class="w-[200px] h-[324px]" src="Images/bootcamp-kitchen/Main.png" />
+        <img class="w-[200px] h-[324px]" src="Images/bootcamp-kitchen/searched.png" />
+        <img class="w-[200px] h-[324px]" src="Images/bootcamp-kitchen/Responsive.png" />
+        </div>
+    
+    
+    <div class="text-container w-1/3 flex flex-col items-center px-4">
+        <p class="text-white mt-10">"Bootcamp Kitchen" focused on encouraging healthy eating among bootcamp participants. It involved stages of ideation, design, and implementation, creating a web-based tool for dietary </p> <br>
+        <div class="flex">
+             <p class="text-white"> HTML, CSS, JavaScript, Node.js, Express, Vitest, Playwright, Figma  </p>
+              <button class="text-white"> More Information</button>
+    </div>
+    </div>
+    </div>
+ <!-------------------CARD-THREE-------------------->
+
+  <!-------------------CARD-FOUR--------------------->
+</section>
+</main>
 </body>
 </html>
