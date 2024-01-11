@@ -42,13 +42,15 @@
         text-align: left;
 
     }
+    .tech-stacks {
+        display: none;
+    }
    
 }
 
 
 .nav-bar-custom-color {
     background-color: #564848;
-    position: relative;
 }
 
 .homepage-custom-color {
