@@ -42,6 +42,9 @@
         text-align: left;
 
     }
+    .tech-stacks {
+        display: none;
+    }
    
 }
 
