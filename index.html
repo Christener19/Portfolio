@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="output.css">
     <title>Christener Leigh's portfolio</title>
 </head>
-<body class="w-auto relative homepage-custom-color">
-    <div id="home"></div>
-        <nav class="w-full h-14 nav-bar-custom-color flex justify-between items-center sticky top-0 z-50">
+<body id="home" class="w-auto relative homepage-custom-color">
+          <nav class="w-full h-14 nav-bar-custom-color flex justify-between items-center sticky top-0 z-50">
             <button class=" ml-5  lg:hidden text-white text-xl">
                 <img src="Images/navbar/menu.png" alt="Menu" class="w-6 h-6">
              </button>
             <div class="nav-container hidden lg:flex items-center">
         <a href="#home" class="nav-item w-24 h-9 text-center text-white  text-xl font-normal font-['Inter']">Home</a>
-        <a href="#projects" class="nav-item w-24 h-9 text-center text-white text-xl font-normal font-['Inter']">Projects</a>
         <a href="#about" class="nav-item w-24 h-9 text-center text-white text-xl font-normal font-['Inter']">About</a>
+        <a href="#projects" class="nav-item w-24 h-9 text-center text-white text-xl font-normal font-['Inter']">Projects</a>
         <a href="#contact" class="nav-item w-24 h-9 text-center text-white text-xl font-normal font-['Inter']">Contact</a>
     </div>
     <div class="flex items-center">
@@ -42,7 +41,7 @@
 </div>
 </section>
 
-<section id="about" class="flex justify-center items-center w-full">
+<section id="about" class="flex justify-center items-center w-full h-screen">
     <div class="flex flex-col items-center mt-10 w-2/3">
         <h1 class="text-white text-4xl">About me</h1>
         <p class="text-white mt-5">
@@ -56,7 +55,7 @@
 
 
 
-<section id="projects" class="flex flex-col items-center justify-center mt-10">
+<section id="projects" class="flex flex-col items-center justify-center md:pt-20">
     <!----------------CARD-ONE--------------->
     <h1 class="text-white text-4xl">Projects</h1>
 <div class="card-one w-2/3  min-h-64 flex mt-5">
@@ -157,9 +156,9 @@
 </div>
   <!-------------------CARD-FOUR--------------------->
 </section>
-<section id="contact" class="flex flex-col items-center justify-center mt-10">
+<!-- <section id="contact" class="flex flex-col items-center justify-center mt-10">
     <h1 class="text-white text-4xl">Contact</h1>
-</section>
+</section> -->
 </main>
 <footer>
    <p class="text-white text-center">Made with 💖 by Christener</p> 
