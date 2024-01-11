@@ -9,3 +9,11 @@ window.addEventListener('scroll', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('nav button');
+    const navContainer = document.querySelector('.nav-container');
+
+    menuButton.addEventListener('click', () => {
+        navContainer.classList.toggle('mobile-visible');
+    });
+});

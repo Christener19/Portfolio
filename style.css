@@ -16,12 +16,39 @@
     .text-container p {
         font-size: larger; 
     }
- 
+    .mobile-visible {
+        display: block;
+    }
+    .nav-container {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        display: none;
+   
+    }
+    .nav-container.mobile-visible {
+        background-color:  rgb(35, 27, 46);
+        padding: 10px 0;
+        display: block; 
+    }
+    .nav-container .nav-item {
+        display: none;
+        text-align: left;
+        padding: 5px 10px;
+    }
+
+    .nav-container.mobile-visible .nav-item {
+        display: block;
+        text-align: left;
+
+    }
+   
 }
 
 
 .nav-bar-custom-color {
-    background-color: #564848
+    background-color: #564848;
+    position: relative;
 }
 
 .homepage-custom-color {
