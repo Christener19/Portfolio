@@ -12,8 +12,16 @@ window.addEventListener('scroll', function () {
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('nav button');
     const navContainer = document.querySelector('.nav-container');
+    const dropdownLinks = document.querySelectorAll('.nav-container a');
 
     menuButton.addEventListener('click', () => {
         navContainer.classList.toggle('mobile-visible');
+    });
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navContainer.classList.contains('mobile-visible')) {
+                navContainer.classList.remove('mobile-visible');
+            }
+        });
     });
 });
