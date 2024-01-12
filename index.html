@@ -10,7 +10,7 @@
 </head>
 <body id="home" class="w-auto relative homepage-custom-color">
           <nav class="w-full h-14 nav-bar-custom-color flex justify-between items-center sticky top-0 z-50">
-            <button class=" ml-5  lg:hidden text-white text-xl">
+            <button type="button" class=" ml-5  lg:hidden text-white text-xl">
                 <img src="Images/navbar/menu.png" alt="Menu" class="w-6 h-6">
              </button>
             <div class="nav-container hidden lg:flex items-center">
@@ -88,7 +88,7 @@
     <p class="text-white mt-10">"Bootcamp Kitchen" focused on encouraging healthy eating among bootcamp participants. It involved stages of ideation, design, and implementation, creating a web-based tool for dietary </p> <br>
     <div class="flex">
          <p class="text-white tech-stacks"> HTML, CSS, Bootstrap, JavaScript, Node.js, ElephantSQL, Express, Vitest, Playwright, Figma, Git</p>
-          <button class="text-white lg:ml-5 lg:mb-0 mb-10"> More Information</button>
+          <button type="button" class="text-white lg:ml-5 lg:mb-0 mb-10"> More Information</button>
 </div>
 </div>
 </div>
@@ -121,7 +121,7 @@
             efficient web-based attendance tracking system. </p> <br>
         <div class="flex">
              <p class="text-white tech-stacks">Next.js, Tailwind, Chart.js, PostgreSQL, Node.js, Playwright, Jest, Figma, Git, Trello</p>
-              <button class="text-white lg:ml-5 lg:mb-0 mb-10"> More Information</button>
+              <button type="button" class="text-white lg:ml-5 lg:mb-0 mb-10"> More Information</button>
     </div>
     </div>
     </div>
@@ -152,18 +152,32 @@
     <p class="text-white mt-10">I'm putting together my portfolio. It's a mix of different projects where I get to show off what I can do – from being creative to solving tricky problems in tech. </p> <br>
     <div class="flex">
          <p class="text-white tech-stacks"> HTML, CSS, JavaScript, Tailwind, Figma</p>
-          <button class="text-white lg:ml-5"> More Information</button>
+          <button type="button" class="text-white lg:ml-5"> More Information</button>
 </div>
 </div>
 </div>
   <!-------------------CARD-FOUR--------------------->
 </section>
-<!-- <section id="contact" class="flex flex-col items-center justify-center mt-10">
+<section id="contact" class="flex flex-col items-center justify-center mt-10">
+    <div class="flex flex-col items-center justify-center mt-10">
     <h1 class="text-white text-4xl">Contact</h1>
-</section> -->
+    <form action="/submit-contact" method="post" class="flex flex-col">
+        <label for="name" class="text-white">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" class="text-white">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message" class="text-white">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="text-white">Send</button>
+      </form>
+</div>
+</section>
 </main>
 <footer>
-   <p class="text-white text-center">Made with 💖 by Christener</p> 
+   <p class="text-white text-center">Made with 💖 by Christener</p>
 </footer>
 <script src="main.js"></script>
 </body>
