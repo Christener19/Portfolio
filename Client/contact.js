@@ -1,28 +1,32 @@
 document.querySelector('form').addEventListener('submit', async (event) => {
+  event.preventDefault();
+
   try {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const jsonData = Object.fromEntries(formData.entries());
 
-    const response = await fetch(
-      // 'https://christener.vercel.app/api/contact',
-      'http://localhost:3000/api/contact',
+    const response = await fetch("https://christener.vercel.app/api/contact",
+      // "http://localhost:3000/api/contact",
       {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(jsonData)
     });
 
-    const responseText = await response.text();
-    console.log('Response:', responseText);
-
-    if (response.ok) {
-      const responseData = JSON.parse(responseText);
-      console.log('Parsed Data:', responseData);
-    } else {
-      console.error('Error:', response.statusText);
+    if (!response.ok) {
+      throw new Error(`Server returned ${response.status} ${response.statusText}`);
     }
+
+    const responseText = await response.text();
+    console.log("Response Text:", responseText);
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
+    // Clear the input values
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+
+    return false;
 });
+
