@@ -3,7 +3,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
   const formData = new FormData(event.target);
   const jsonData = Object.fromEntries(formData.entries());
 
-  fetch('http://localhost:3000/contact', {
+  fetch('https://christener.vercel.app/contact', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(jsonData)
