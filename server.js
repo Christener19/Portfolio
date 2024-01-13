@@ -1,22 +1,30 @@
 import express from 'express';
-import { urlencoded } from 'body-parser';
 import nodemailer from 'nodemailer';
-require('dotenv').config();
+import dotenv from 'dotenv';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
 
-app.use(urlencoded({ extended: true }));
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'hotmail',
   auth: {
-    user: process.env.EMAIL,
+    user: process.env.EMAIL ,
     pass: process.env.PASSWORD,
   },
+  port: 587
 });
 
+app.use(cors());
+app.use(bodyParser.json());
+
+
 app.post('/contact', (req, res) => {
+    console.log(req.body)
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
