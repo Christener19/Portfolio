@@ -4,20 +4,22 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 
-dotenv.config();
+dotenv.config({ path: '.env.local'});
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT
 
 
 const transporter = nodemailer.createTransport({
   service: 'hotmail',
   auth: {
-    user: process.env.EMAIL ,
+    user: process.env.EMAIL,
     pass: process.env.PASSWORD,
   },
   port: 587
 });
+console.log(process.env.EMAIL)
+console.log(process.env.PASSWORD)
 
 app.use(cors());
 app.use(bodyParser.json());
