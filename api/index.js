@@ -25,7 +25,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-app.post('/contact', (req, res) => {
+app.post('api/contact', (req, res) => {
     console.log(req.body)
   const name = req.body.name;
   const email = req.body.email;
