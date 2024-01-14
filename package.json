@@ -3,7 +3,7 @@
   "name": "portfolio-two",
   "version": "1.0.0",
   "description": "Christener's Portfolio",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
     "start": "node api/index.js",
     "dev": "nodemon api/index.js"
