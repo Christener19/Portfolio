@@ -2,12 +2,12 @@
     "version": 2,
     "routes": [
       {
-        "src": "/api/contact",
-        "dest": "/api/contact.js"
+        "src": "api/contact",
+        "dest": "Client/contact.js"
       },
       {
-        "src": "/(.*)",
-        "dest": "/api/index.js"
+        "src": "(.*)",
+        "dest": "api/index.js"
       }
     ]
   }
