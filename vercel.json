@@ -32,13 +32,6 @@
         ]
       }
     ],
-    "has": [
-      {
-        "type": "header",
-        "key": "Authorization"
-
-      }
-    ],
     "missing": [
       {
         "type": "cookie",
