@@ -3,7 +3,11 @@
     "rewrites": [
       {
         "source": "/api/contact",
-        "destination": "/api/contact.js"
+        "destination": "/api/contact.js",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" },
+          { "key": "Content-Type", "value": "application/json" }
+        ]
       },
       {
         "source": "/:path*",
@@ -13,31 +17,12 @@
             "key": "authorized"
           }
         ],
-        "headers": [
-          {
-            "key": "x-authorized",
-            "value": "true"
-          }
-        ]
-      }
-    ],
-    "headers": [
-      {
-        "source": "/api/contact",
-        "headers": [
-          { "key": "Access-Control-Allow-Origin", "value": "*" },
-          { "key": "Content-Type", "value": "application/json" }
-        ]
-      },
-      {
-        "source": "/(.*)",
-        "headers": [
- 
-        ]
+        "destination": "/api/index.js"
       }
     ],
     "cleanUrls": true,
     "trailingSlash": true,
     "installCommand": "npm install"
   }
+  
   
