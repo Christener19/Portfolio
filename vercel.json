@@ -31,14 +31,8 @@
      
         ]
       }
-    ],
-    "missing": [
-      {
-        "type": "cookie",
-        "key": "session"
-     
-      }
-    ],
-    "installCommand": "npm install"
+    ]
+   
+
 }
   
