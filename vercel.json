@@ -3,7 +3,10 @@
     "builds": [
       {
         "src": "api/**/*.js",
-        "use": "@vercel/node"
+        "use": "@vercel/node",
+        "config": {
+          "include": ["api/package.json", "api/package-lock.json"]
+        }
       },
       {
         "src": "public/**",
@@ -24,13 +27,8 @@
         "dest": "/$1"
       }
     ],
-    "install": {
-      "include": ["api/package.json", "api/package-lock.json"]
-    },
-    "build": {
-      "env": {
-        "NODE_ENV": "production"
-      }
+    "env": {
+      "NODE_ENV": "production"
     },
     "dev": {
       "port": 3000,
@@ -40,5 +38,5 @@
         { "src": "/(.*)", "dest": "/$1" }
       ]
     }
-  }
+  }  
   
