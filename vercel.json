@@ -1,28 +1,15 @@
 {
     "version": 2,
-    "rewrites": [
+    "routes": [
       {
-        "source": "/api/contact",
-        "destination": "/api/contact.js",
-        "headers": [
-          { "key": "Access-Control-Allow-Origin", "value": "*" },
-          { "key": "Content-Type", "value": "application/json" }
-        ]
+        "src": "/api/contact",
+        "dest": "/api/contact.js"
       },
       {
-        "source": "/:path*",
-        "has": [
-          {
-            "type": "query",
-            "key": "authorized"
-          }
-        ],
-        "destination": "/api/index.js"
+        "src": "/(.*)",
+        "dest": "/api/index.js"
       }
-    ],
-    "cleanUrls": true,
-    "trailingSlash": true,
-    "installCommand": "npm install"
+    ]
   }
   
   
