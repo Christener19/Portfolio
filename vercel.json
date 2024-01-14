@@ -2,19 +2,50 @@
     "version": 2,
     "builds": [
       {
-        "src": "index.js",
+        "src": "api/index.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "api/contact.js"
+        "src": "/api/contact",
+        "methods": ["POST"],
+        "dest": "Client/contact.js"
       },
       {
         "src": "/(.*)",
-        "dest": "index.js"
+        "dest": "api/index.js"
       }
-    ]
-  }
+    ],
+    "headers": [
+      {
+        "source": "/api/contact",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" },
+          { "key": "Content-Type", "value": "application/json" }
+        ]
+      },
+      {
+        "source": "/(.*)",
+        "headers": [
+     
+        ]
+      }
+    ],
+    "has": [
+      {
+        "type": "header",
+        "key": "Authorization"
+
+      }
+    ],
+    "missing": [
+      {
+        "type": "cookie",
+        "key": "session"
+     
+      }
+    ],
+    "installCommand": "npm install"
+}
   
