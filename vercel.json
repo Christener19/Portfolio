@@ -1,15 +1,44 @@
 {
     "version": 2,
+    "builds": [
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      }
+    ],
     "routes": [
       {
-        "src": "api/contact",
+        "src": "/api/contact",
         "dest": "Client/contact.js"
       },
       {
-        "src": "(.*)",
-        "dest": "api/index.js"
+        "src": "/api/.*",
+        "dest": "/api/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
       }
-    ]
+    ],
+    "install": {
+      "include": ["api/package.json", "api/package-lock.json"]
+    },
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "dev": {
+      "port": 3000,
+      "routes": [
+        { "handle": "filesystem" },
+        { "src": "/api/.*", "dest": "/api/index.js" },
+        { "src": "/(.*)", "dest": "/$1" }
+      ]
+    }
   }
-  
   
