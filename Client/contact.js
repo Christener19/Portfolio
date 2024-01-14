@@ -5,8 +5,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
     const formData = new FormData(event.target);
     const jsonData = Object.fromEntries(formData.entries());
 
-    const response = await fetch("https://christener.vercel.app/api/contact",
-      // "http://localhost:3000/api/contact",
+    const response = await fetch("/api/contact",
       {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
