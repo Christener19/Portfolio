@@ -1,20 +1,24 @@
 {
     "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "api/index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/contact",
-        "methods": ["POST"],
-        "dest": "Client/contact.js"
+        "source": "/api/contact",
+        "destination": "/api/contact.js"
       },
       {
-        "src": "/(.*)",
-        "dest": "api/index.js"
+        "source": "/:path*",
+        "has": [
+          {
+            "type": "query",
+            "key": "authorized"
+          }
+        ],
+        "headers": [
+          {
+            "key": "x-authorized",
+            "value": "true"
+          }
+        ]
       }
     ],
     "headers": [
@@ -28,11 +32,12 @@
       {
         "source": "/(.*)",
         "headers": [
-     
+ 
         ]
       }
-    ]
-   
-
-}
+    ],
+    "cleanUrls": true,
+    "trailingSlash": true,
+    "installCommand": "npm install"
+  }
   
