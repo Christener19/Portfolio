@@ -4,9 +4,17 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
 dotenv.config({ path: '.env.local'});
 
+const staticPath = path.join(__dirname, "../Client");
+
 const app = express();
+
+pp.use(express.static(staticPath)); 
 const port = process.env.PORT
 
 
