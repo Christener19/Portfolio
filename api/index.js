@@ -14,7 +14,7 @@ const staticPath = path.join(__dirname, "../Client");
 
 const app = express();
 
-pp.use(express.static(staticPath)); 
+pp.use(express.static(staticPath));
 const port = process.env.PORT
 
 
