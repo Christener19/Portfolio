@@ -3,6 +3,8 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -14,7 +16,8 @@ const staticPath = path.join(__dirname, "../Client");
 
 const app = express();
 
-pp.use(express.static(staticPath));
+app.use(express.static(staticPath));
+
 const port = process.env.PORT
 
 
@@ -33,7 +36,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-app.post('/api/contact', (req, res) => {
+app.post('/contact', (req, res) => {
     console.log('Received a contact form submission:', req.body);
   const name = req.body.name;
   const email = req.body.email;

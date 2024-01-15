@@ -5,7 +5,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
     const formData = new FormData(event.target);
     const jsonData = Object.fromEntries(formData.entries());
 
-    const response = await fetch("/api/contact",
+    const response = await fetch("/contact",
       {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

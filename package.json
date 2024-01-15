@@ -3,10 +3,10 @@
   "name": "portfolio-two",
   "version": "1.0.0",
   "description": "Christener's Portfolio",
-  "main": "api/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node /opt/render/project/src/api/api/index.js",
-    "dev": "nodemon api/index.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "build": "npm install"
   },
   "keywords": [],
