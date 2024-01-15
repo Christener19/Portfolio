@@ -29,8 +29,6 @@ const transporter = nodemailer.createTransport({
   },
   port: 587
 });
-console.log(process.env.EMAIL)
-console.log(process.env.PASSWORD)
 
 app.use(cors());
 app.use(bodyParser.json());
