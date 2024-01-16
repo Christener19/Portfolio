@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: '.env.local'});
 
-const staticPath = path.join(__dirname, "../Client");
+const staticPath = path.join(__dirname, "../Client/Homepage");
 
 const app = express();
 
