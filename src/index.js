@@ -12,11 +12,13 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: '.env.local'});
 
-const staticPath = path.join(__dirname, "../Client/Homepage");
+const staticPathHomepage = path.join(__dirname, "../Client/Homepage");
+const staticPathMoreInformation = path.join(__dirname, "../Client/MoreInformation");
 
 const app = express();
 
-app.use(express.static(staticPath));
+app.use(express.static(staticPathHomepage));
+app.use('/MoreInformation', express.static(staticPathMoreInformation));
 
 const port = process.env.PORT
 
