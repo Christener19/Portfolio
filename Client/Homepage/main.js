@@ -26,13 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Below is the more information section
 
 let moreInfoBtn = document.getElementById('moreInfoBtn');
 moreInfoBtn.addEventListener('click', function() {
-window.location.href = 'bootcampInfo.html';
+window.location.href = 'MoreInformation/bootcampInfo.html';
 });
-
-function goBack() {
-    window.history.back();
-}
