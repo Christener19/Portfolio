@@ -57,6 +57,10 @@ app.post('/contact', (req, res) => {
   });
 });
 
+app.get('/MoreInformation/bootcampInfo.html', (req, res) => {
+  res.sendFile(path.join(staticPath, 'MoreInformation', 'bootcampInfo.html'));
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
