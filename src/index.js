@@ -58,7 +58,7 @@ app.post('/contact', (req, res) => {
 });
 
 app.get('/MoreInformation/bootcampInfo.html', (req, res) => {
-  res.sendFile(path.join(staticPath, 'MoreInformation', 'bootcampInfo.html'));
+  res.sendFile(path.join(__dirname, '../Client/MoreInformation/bootcampInfo.html'));
 });
 
 app.listen(port, () => {
