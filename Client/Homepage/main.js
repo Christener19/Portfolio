@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let moreInfoBtn = document.getElementById('moreInfoBtn');
 moreInfoBtn.addEventListener('click', function() {
-window.location.href = '../MoreInformation/bootcampInfo.html';
+window.location.href = '../MoreInformation/Bootcamp kitchen/bootcampInfo.html';
 });

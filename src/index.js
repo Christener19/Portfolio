@@ -60,7 +60,7 @@ app.post('/contact', (req, res) => {
 });
 
 app.get('/MoreInformation/bootcampInfo.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Client/MoreInformation/bootcampInfo.html'));
+  res.sendFile(path.join(__dirname, '../Client/MoreInformation/Bootcamp kitchen/bootcampInfo.html'));
 });
 
 app.listen(port, () => {

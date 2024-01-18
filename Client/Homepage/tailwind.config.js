@@ -9,9 +9,8 @@ module.exports = {
       width: {
         '104': '416px',
       },
-    },
   },
   variants: {},
   plugins: [],
 }
-
+}
