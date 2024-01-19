@@ -31,3 +31,12 @@ let moreInfoBtn = document.getElementById('moreInfoBtn');
 moreInfoBtn.addEventListener('click', function() {
 window.location.href = '../MoreInformation/Bootcamp kitchen/bootcampInfo.html';
 });
+
+let moreInfoBtnIntern = document.getElementById('moreInfoBtnIntern');
+moreInfoBtnIntern.addEventListener('click', function() {
+window.location.href = '../MoreInformation/Intern/Intern.html';
+});
+let moreInfoBtnPortfolio = document.getElementById('moreInfoBtnPortfolio');
+moreInfoBtnPortfolio.addEventListener('click', function() {
+window.location.href = '../MoreInformation/Portfolio/Portfolio.html';
+});
