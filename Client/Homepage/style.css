@@ -9,7 +9,7 @@
         order: 2;
     }
 
-    .card-one .flex.justify-center, .card-two .flex.justify-center, .card-three .flex.justify-center {
+    .button .card-one .flex.justify-center, .card-two .flex.justify-center, .card-three .flex.justify-center {
         order: 1;
     }
  
