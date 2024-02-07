@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    window.addEventListener('scroll', () => {
+        if (navContainer.classList.contains('mobile-visible')) {
+            navContainer.classList.remove('mobile-visible');
+        }
+    }, { passive: true });
 });
 
 
