@@ -50,14 +50,38 @@
             This was a solo project where I used my newly acquired tech skills to create a portfolio website.
             </p>
     </div>
-<!----------------------Planning stage------------------------>
+<!----------------------First few days------------------------>
 <div class="flex flex-col items-start justify-start mt-16">
-    <h2 class="text-2xl lg:text-3xl text-white text-left font-bold">Planning stage:</h2>
+    <h2 class="text-2xl lg:text-3xl text-white text-left font-bold">Day 1:</h2>
     <br>
-    <p class="text-white text-left text-xl"> I started by looking at various online portfolios from people showcasing their art projects, developer skills. This allowed me to gain some inspiration and ideas for my own portfolio. I then began creating a wireframe using Figma, choosing the layout and color palette I was going to use.
+    <p class="text-white text-left text-xl"> I started by looking at various online portfolios from people showcasing their art projects, architecture builds, and developer skills. This allowed me to gain some inspiration and ideas for my own portfolio. I then began creating wireframes using Figma, choosing the layout and color palette I was going to use. I knew I wanted to make my app fully responsive and have an option for light/darkmode.
+        <br>
+        <br>
+    <img src="./images/wireframe.png" alt="Wireframe Dark Mode" class="w-3/3 mx-auto">
+    <br>
+    <img src="./images/wireframe-lightmode.png" alt="Wireframe Light Mode" class="w-3/3 mx-auto">
         </p>
         </div>
+<!----------------------Second few days------------------------>
+<div class="flex flex-col items-start justify-start mt-16">
+    <h2 class="text-2xl lg:text-3xl text-white text-left font-bold">Day 2-3:</h2>
+    <br>
+    <p class="text-white text-left text-xl">I began by deploying "Hello World!" using Vercel to enable continuous deployment. Following this, I created the HTML structure of the homepage and added Tailwind classes to style the different sections. The main page closely followed the layout of the wireframe, though I introduced subtle modifications in positioning and adjusted the font sizes for better user readability. To enhance the navigation bar, I added icon links, connecting users directly to my professional LinkedIn and GitHub profile.
+        </p>
+</div>
+<div class="flex flex-col items-start justify-start mt-16">
+    <h2 class="text-2xl lg:text-3xl text-white text-left font-bold">Day 4-5:</h2>
+    <br>
+    <p class="text-white text-left text-xl">After completing all the different sections, I moved my focus to the contact section which will allow direct email communication for users wishing to reach out to me. To achieve this, I implemented Nodemailer, a tool that enables email exchanges directly from the website. <!--Additionally, I incorporated validation to ensure that users enter a valid email address.-->
+        <br>
+        Setting up the frontend for this section went smoothly. However, the backend presented several challenges. The two most memorable issues involved Nodemailer; the first was getting Nodemailer to work locally. My Gmail account was blocking the requests no matter what solution I tried. In the end I decided to create an account with Hotmail and see if it would work that way; a few more errors later, I got it to work. The second issue was deploying it on Vercel, which proved problematic. Despite trying various solutions, none were successful. Fortunately, a fellow coder, Doug Forbes, suggested using Render instead, which ultimately resolved my issues.
+        </p>
+</div>
     </section>
     </main>
+    <footer class="flex justify-center items-center text-white mb-5 mt-3">
+        <p>Made with 💖 by Christener</p>
+    </footer>
+    <script src="main.js"></script>
     </body>
     </html>
