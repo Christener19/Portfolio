@@ -24,12 +24,12 @@
         top: 100%;
         width: 100%;
         display: none;
-   
+        background-color: rgb(35, 27, 46);
+        padding: 10px 0;
     }
     .nav-container.mobile-visible {
-        background-color:  rgb(35, 27, 46);
-        padding: 10px 0;
-        display: block; 
+        display: flex;
+        flex-wrap: wrap;
     }
     .nav-container .nav-item {
         display: none;
@@ -42,10 +42,6 @@
         text-align: left;
 
     }
-    .tech-stacks {
-        display: none;
-    }
-   
 }
 
 
