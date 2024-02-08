@@ -44,7 +44,7 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1169px) {
+@media (min-width: 1024px) and (max-width: 1169px) {
     .custom-object-fit {
       object-fit: contain !important;
       width: 360px;
