@@ -3,7 +3,7 @@ window.addEventListener('scroll', function () {
     let scrollThreshold = 10;
     let windowWidth = window.innerWidth;
 
-    if (windowWidth >= 768) {
+    if (windowWidth >= 1022) {
         if (window.scrollY > scrollThreshold) {
             navbar.style.opacity = '0.75';
         } else {
