@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    document.addEventListener('click', (event) => {
+        const isMenuButtonClicked = menuButton.contains(event.target);
+        const isDropdownLinkClicked = Array.from(dropdownLinks).some(link => link.contains(event.target));
+
+        if (!isMenuButtonClicked && !isDropdownLinkClicked && navContainer.classList.contains('mobile-visible')) {
+            navContainer.classList.remove('mobile-visible');
+        }
+    });
     window.addEventListener('scroll', () => {
         if (navContainer.classList.contains('mobile-visible')) {
             navContainer.classList.remove('mobile-visible');
