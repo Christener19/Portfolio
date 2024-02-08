@@ -3,7 +3,7 @@ window.addEventListener('scroll', function () {
     let scrollThreshold = 10;
     let windowWidth = window.innerWidth;
 
-    if (windowWidth >= 768) {
+    if (windowWidth >= 1022) {
         if (window.scrollY > scrollThreshold) {
             navbar.style.opacity = '0.75';
         } else {
@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 navContainer.classList.remove('mobile-visible');
             }
         });
+    });
+    document.addEventListener('click', (event) => {
+        const isMenuButtonClicked = menuButton.contains(event.target);
+        const isDropdownLinkClicked = Array.from(dropdownLinks).some(link => link.contains(event.target));
+
+        if (!isMenuButtonClicked && !isDropdownLinkClicked && navContainer.classList.contains('mobile-visible')) {
+            navContainer.classList.remove('mobile-visible');
+        }
     });
     window.addEventListener('scroll', () => {
         if (navContainer.classList.contains('mobile-visible')) {
