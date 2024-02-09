@@ -75,11 +75,21 @@
     .monitor{
         font-size: large;
        }
-    .buttonsNorm{
+    .buttonsProject{
         font-size: medium;
+        height: 31.25px;  
     }
+    .buttonsContact{
+        font-size: small;
+        width: 50px ;
+        margin-top: ;
+    } 
     .navNormScreen {
         height: 64px;
+    }
+    .form-Labels{
+        width: 256px;
+        
     }
 }
 
@@ -91,9 +101,15 @@
         font-size: 1.5rem;
         line-height: 2rem;
        }
-    .buttonsNorm{
+    .buttonsProject{
         font-size: 1rem;
+        height: 31.25px; 
     }
+    .buttonsContact{
+        font-size: 1rem;
+        width: 100px;
+        margin-top: 25px;
+    } 
     .custom-width{
         width: 400px;
       } 
@@ -114,8 +130,9 @@
     .navHugeScreen {
         height: 100px;
     }
-    .buttonsNorm{
+    .buttonsProject{
         font-size: 2rem;
+        height: 62.5px;  
     }
     .custom-width {
         width: 600px;
@@ -124,6 +141,10 @@
     .custom-heightImage-one {
         height: 350px;
       }
+    .form-Labels{
+        width: 500px;
+        height: 50px;
+    }
 }
 
 @media (min-width: 5000px) {
@@ -138,8 +159,14 @@
     .navHugeScreen {
         height: 250px;
     }
-    .buttonsNorm{
+    .buttonsProject{
         font-size: 3rem;
+        height: 125px;  
+    }
+    .buttonsContact{
+        font-size: 3rem;
+        width: 250px;
+        margin-top: 50px;
     } 
     .custom-width {
         width: 1500px;
@@ -148,6 +175,10 @@
     .custom-heightImage-one {
         height: 900px;
       }
+    .form-Labels{
+        width: 1500px;
+        height: 100px;
+    }
 }
 
 .nav-bar-custom-color {
