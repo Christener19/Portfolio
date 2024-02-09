@@ -16,7 +16,7 @@
     .text-container p {
         font-size: larger; 
     }
-    .mobile-visible {
+     .mobile-visible {
         display: block;
     }
     .nav-container {
@@ -41,7 +41,7 @@
         display: block;
         text-align: left;
 
-    }
+    } 
 }
 
 @media (min-width: 1023px) and (max-width: 1169px) {
