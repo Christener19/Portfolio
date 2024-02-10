@@ -62,8 +62,9 @@
     }
 
     @media (min-width: 1023px) and (max-width: 1325px) {
-        .custom-width {
-            width: 200px;
+          .custom-heightImage-one {
+            height: 200px;
+            width: 325px;
             margin-right: 24px;
           }
     }
@@ -82,14 +83,15 @@
     .buttonsContact{
         font-size: small;
         width: 50px ;
-        margin-top: ;
     } 
     .navNormScreen {
         height: 64px;
     }
     .form-Labels{
-        width: 256px;
-        
+        width: 256px;   
+    }
+    .form-message{
+        height: 100px;
     }
 }
 
@@ -110,12 +112,13 @@
         width: 100px;
         margin-top: 25px;
     } 
-    .custom-width{
-        width: 400px;
-      } 
     .custom-heightImage-one {
         height: 250px;
+        width: 400px;
       }
+    .form-message {
+        height: 200px;
+    }
 }
 
 @media (min-width: 3000px) {
@@ -134,16 +137,22 @@
         font-size: 2rem;
         height: 62.5px;  
     }
-    .custom-width {
+    .buttonsContact{
+        font-size: 2rem;
+        width: 175px;
+        margin-top: 50px;
+    } 
+    .custom-heightImage-one {
+        height: 350px;
         width: 600px;
         margin-right: 24px;
       }
-    .custom-heightImage-one {
-        height: 350px;
-      }
     .form-Labels{
-        width: 500px;
-        height: 50px;
+        width: 800px;
+        height: 55px;
+    }
+    .form-message{
+        height: 300px;
     }
 }
 
@@ -168,16 +177,17 @@
         width: 250px;
         margin-top: 50px;
     } 
-    .custom-width {
-        width: 1500px;
-        margin-right: 24px;
-      }
     .custom-heightImage-one {
         height: 900px;
+        width: 1500px;
+        margin-right: 24px;
       }
     .form-Labels{
         width: 1500px;
         height: 100px;
+    }
+    .form-message{
+        height: 500px;
     }
 }
 
