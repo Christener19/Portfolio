@@ -313,6 +313,12 @@ input {
     .navHugeScreen {
         height: 250px;
     }
+    .text-container p { 
+        margin-left: 600px;
+    }
+    .text-container h3 {
+        margin-left: 600px; 
+    }
     .buttonsProject{
         font-size: 3rem;
         height: 125px;  
