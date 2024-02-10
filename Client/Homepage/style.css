@@ -34,7 +34,6 @@
         width: 100%;
         display: none;
         background-color: rgb(35, 27, 46);
-        padding: 10px 0;
     }
     .nav-container.mobile-visible {
         display: flex;
@@ -42,14 +41,34 @@
     }
     .nav-container .nav-item {
         display: none;
-        text-align: left;
-        padding: 5px 10px;
+        padding: 5px;
     }
-
     .nav-container.mobile-visible .nav-item {
         display: block;
-        text-align: left;
+    } 
+}
 
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+    .mobile-visible {
+        display: block;
+    }
+    .nav-container {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        display: none;
+        background-color: rgb(35, 27, 46);
+    }
+    .nav-container.mobile-visible {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-container .nav-item {
+        display: none;
+        padding: 5px;
+    }
+    .nav-container.mobile-visible .nav-item {
+        display: block;
     } 
 }
 
@@ -63,6 +82,9 @@
     }
 
 @media (min-width: 100px) and (max-width: 600px) {
+    .text-container {
+        margin-top: 15px;
+    }
     .monitor-header{
         font-size: xx-large;
     }
@@ -77,8 +99,19 @@
         font-size: small;
         width: 50px ;
     } 
-    .navNormScreen {
-        height: 64px;
+    .navHugeScreen {
+        height: 50px;
+    }
+    .nav-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .nav-container .nav-item {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
     }
     .form-Labels{
         width: 265px;   
@@ -89,6 +122,36 @@
 }
 
 @media (min-width: 601px) and (max-width: 900px ) {
+    .text-container {
+        margin-top: 65px
+    }
+    .image-container {
+        margin-top: 55px;;
+    }
+    .text-container p {
+        font-size: x-large; 
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .text-container h3 {
+        font-size: xx-large; 
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .navHugeScreen {
+        height: 50px;
+    }
+    .nav-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .nav-container .nav-item {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
+    }
     .monitor-header{
         font-size: xx-large;
     }
@@ -124,21 +187,38 @@
         height: 35px;
     }
     .form-message{
-        height: 250px;
+        height: 150px;
     }
     input {
         font-size: 1.5rem !important;
     }
-    .card-one{
-     
-    }
 }
 
-@media (min-width: 900px) and (max-width: 1250px) {
+@media (min-width: 901px) and (max-width: 1250px) {
     .custom-heightImage-one {
       height: 200px;
       width: 325px;
       margin-right: 24px;
+    }
+    .navHugeScreen {
+        height: 50px;
+    }
+    .nav-icon{
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .nav-container .nav-item {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
+    }
+    .response1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 150px;
     }
     .text-container p {
       margin-left: 80px;
@@ -215,6 +295,25 @@ input {
     input {
         font-size: 1.5rem !important;
     }
+    .response1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .navHugeScreen {
+        height: 75px;
+    }
+    .nav-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+    .nav-container .nav-item {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 2000px) {
@@ -254,6 +353,25 @@ input {
     input {
         font-size: 2.5rem !important;
     }
+    .response1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .navHugeScreen {
+        height: 75px;
+    }
+    .nav-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 35px;
+    }
+    .nav-container .nav-item {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 3000px) {
@@ -265,8 +383,20 @@ input {
         font-size: 3rem;
         line-height: 3.5rem;
        }
+       .nav-icon{
+        width: 75px;
+        height: 75px;
+        margin-right: 35px;
+    }
     .navHugeScreen {
-        height: 100px;
+        height: 150px;
+    }
+    .nav-container .nav-item {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
     }
     .buttonsProject{
         font-size: 2rem;
@@ -299,6 +429,10 @@ input {
     input {
         font-size: 3.5rem !important;
     }
+    .response1 {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 5000px) {
@@ -310,8 +444,20 @@ input {
         font-size: 4.5rem;
         line-height: 6rem;
        }
+    .nav-icon{
+        width: 100px;
+        height: fit-content;
+        margin-right: 35px;
+    }
     .navHugeScreen {
-        height: 250px;
+        height: 150px;
+    }
+    .nav-container .nav-item {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .nav-container .nav-item:last-child {
+        margin-right: 0;
     }
     .text-container p { 
         margin-left: 600px;
@@ -342,6 +488,10 @@ input {
     }
     input {
         font-size: 4rem !important;
+    }
+    .response1 {
+        display: flex;
+        flex-direction: row;
     }
 }
 

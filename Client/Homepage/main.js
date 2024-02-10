@@ -3,7 +3,7 @@ window.addEventListener('scroll', function () {
     let scrollThreshold = 10;
     let windowWidth = window.innerWidth;
 
-    if (windowWidth > 1023) {
+    if (windowWidth >= 1023) {
         if (window.scrollY > scrollThreshold) {
             navbar.style.opacity = '0.75';
         } else {
@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.querySelector('nav button');
+    const menuButton = document.querySelector('nav button[type="button"]');
     const navContainer = document.querySelector('.nav-container');
     const dropdownLinks = document.querySelectorAll('.nav-container a');
 
