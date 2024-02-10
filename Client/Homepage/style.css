@@ -129,17 +129,15 @@
     input {
         font-size: 1.5rem !important;
     }
-    .card-one{
-     
-    }
 }
 
-@media (min-width: 900px) and (max-width: 1250px) {
+@media (min-width: 901px) and (max-width: 1250px) {
     .custom-heightImage-one {
       height: 200px;
       width: 325px;
       margin-right: 24px;
     }
+    
     .text-container p {
       margin-left: 80px;
   }
