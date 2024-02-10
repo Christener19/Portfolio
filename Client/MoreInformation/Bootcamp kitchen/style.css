@@ -9,3 +9,106 @@
 .custom-rounded { 
     background-color: #0f0f1b;
 }
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .monitor-header{
+        font-size: xx-large;
+    }
+    .monitor{
+        font-size: large;
+       }
+}
+
+@media (min-width: 601px) and (max-width: 900px ) {
+    .monitor-header{
+        font-size: xx-large;
+    }
+    .monitor{
+        font-size: x-large;
+       }
+    .custom-heightImage-one {
+        height: 300px;
+        width: 500px;
+      }
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+    .custom-heightImage-one {
+      height: 200px;
+      width: 325px;
+      margin-right: 24px;
+    }
+.monitor-header{
+    font-size: x-large;
+}
+.monitor{
+    font-size: large;
+   }
+}
+
+@media (min-width: 1250px) {
+    .monitor-header{
+        font-size: 3rem;
+    }
+    .monitor{
+        font-size: 1.5rem;
+        line-height: 2rem;
+       }
+    .custom-heightImage-one {
+        height: 250px;
+        width: 400px;
+      }
+}
+
+@media (min-width: 2000px) {
+    .monitor-header{
+        font-size: 4rem;
+    }
+    .monitor{
+        font-size: 2.5rem;
+        line-height: 3rem;
+       }
+    .custom-heightImage-one {
+        height: 550px;
+        width: 1000px;
+      }
+}
+
+@media (min-width: 3000px) {
+    .monitor-header{
+        font-size: 5.5rem;
+        margin-bottom: 50px;
+    }
+    .monitor{
+        font-size: 3rem;
+        line-height: 3.5rem;
+       }
+    .navHugeScreen {
+        height: 100px;
+    }
+    .custom-heightImage-one {
+        height: 700px;
+        width: 1300px;
+        margin-right: 24px;
+        margin-bottom: 15px;
+      }
+}
+
+@media (min-width: 5000px) {
+    .monitor-header{
+        font-size: 7rem;
+        margin-bottom: 50px;
+    }
+    .monitor{
+        font-size: 4rem;
+        line-height: 6rem;
+       }
+    .navHugeScreen {
+        height: 250px;
+    }
+    .custom-heightImage-one {
+        height: 900px;
+        width: 1500px;
+        margin-right: 24px;
+      }
+}
