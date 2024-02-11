@@ -48,9 +48,12 @@
     } 
 }
 
-@media screen and (min-width: 900px) and (max-width: 1023px) {
+@media screen and (min-width: 901px) and (max-width: 1023px) {
     .mobile-visible {
         display: block;
+    }
+    .project-name {
+        display: none;
     }
     .nav-container {
         position: absolute;
@@ -93,7 +96,7 @@
         margin-bottom: 150px;
     }
     .monitor-header{
-        font-size: xx-large;
+        font-size: x-large;
     }
     h1.monitor-header {
         margin-top: 25px;
@@ -148,6 +151,9 @@
     }
     .image-container {
         margin-top: 55px;;
+    }
+    .image-container2 {
+        margin-top: 10px;;
     }
     .text-container p {
         font-size: x-large; 
@@ -219,8 +225,8 @@
 }
 
 @media (min-width: 901px) and (max-width: 1250px) {
-    .card-three{
-        margin-top: 25px;
+    .card-four{
+        margin-top: 55px;
         margin-bottom: 150px;
     }
     .custom-heightImage-one {
@@ -228,8 +234,17 @@
       width: 325px;
       margin-right: 24px;
     }
+    .card-one{
+        width: 85%;
+    }
+    .card-three{
+        margin-bottom: 50px;
+    }
     .navHugeScreen {
         height: 50px;
+    }
+    .project-name {
+        display: none;
     }
     .nav-icon{
         width: 35px;
@@ -281,7 +296,7 @@ h1.monitor-header {
 .buttonsContact{
     font-size: medium;
     width: 100px;
-    margin-top: 25px;
+    margin-top: 55px;
 }
 .card-two{
     width: 100%;
@@ -295,14 +310,20 @@ h1.monitor-header {
 
 @media (min-width: 1250px) {
     .card-three{
-        margin-top: 55px;
+
         margin-bottom: 150px;
+    }
+    .card-four{
+        margin-bottom: 100px;
     }
     .monitor-header{
         font-size: 3rem;
     }
     h1.monitor-header {
-        margin-top: 75px;
+        margin-top: 40px;
+    }
+    .image-container2{
+        width: 75%;
     }
     .monitor{
         font-size: 1.5rem;
@@ -321,14 +342,13 @@ h1.monitor-header {
         height: 250px;
         width: 400px;
       }
-    .text-container p {
-        margin-right: 40px;
-        margin-left: 100px;
-    }
-    .text-container h3 {
-        margin-right: 40px;
-        margin-left: 100px; 
-    }
+      .text-container{
+        width: 55%;
+        margin-top: 50px;
+      }
+      .image-container img{
+        margin-top: 50px;
+      }
     .form-Labels{
         width: 500px;
         height: 35px;
@@ -343,14 +363,13 @@ h1.monitor-header {
         display: flex;
         flex-direction: row;
         margin-bottom: 200px;
-        margin-top: 100px;
     }
     .navHugeScreen {
-        height: 75px;
+        height: 55px;
     }
     .nav-icon{
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         margin-right: 15px;
     }
     .nav-container .nav-item {
@@ -360,9 +379,15 @@ h1.monitor-header {
     .nav-container .nav-item:last-child {
         margin-right: 0;
     }
+    .card-four{
+        margin-bottom: 200px;
+    }
 }
 
 @media (min-width: 2000px) {
+    .card-four{
+        margin-bottom: 200px;
+    }
     .monitor-header{
         font-size: 4rem;
     }
@@ -382,6 +407,9 @@ h1.monitor-header {
         width: 150px;
         margin-top: 25px;
     }
+    .image-container img{
+        margin-right: 300px;
+    }
     .image-container2{
         width:75%;
     }
@@ -389,14 +417,18 @@ h1.monitor-header {
         height: 500px;
         width: 850px;
       }
+      .text-container{
+        width: 75%;
+     
+      }
     .text-container p {
-        margin-left: 250px;
+        margin-left: 200px;
     }
     .text-container h3 {
-        margin-left: 250px; 
+        margin-left: 200px; 
     }
     .form-Labels{
-        width: 1300px;
+        width: 900px;
         height: 65px;
     }
     .form-message{
@@ -550,7 +582,7 @@ h1.monitor-header {
         margin-right: 24px;
       }
     .form-Labels{
-        width: 1500px;
+        width: 1800px;
         height: 100px;
     }
     .form-message{
