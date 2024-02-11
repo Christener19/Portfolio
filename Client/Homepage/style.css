@@ -69,6 +69,9 @@
     }
     .nav-container.mobile-visible .nav-item {
         display: block;
+    }
+    .text-container {
+        width: 66.66666667%;
     } 
 }
 
@@ -83,7 +86,7 @@
 
 @media (min-width: 100px) and (max-width: 600px) {
     .text-container {
-        margin-top: 15px;
+        margin-top: 35px;
     }
     .monitor-header{
         font-size: xx-large;
@@ -119,11 +122,18 @@
     .form-message{
         height: 100px;
     }
+    .image-container {
+        margin-top: 30px;
+        width: 75%;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px ) {
     .text-container {
-        margin-top: 65px
+        margin-top: 65px;
+        margin-left: 60px;
+        margin-right: 60px;
+      
     }
     .image-container {
         margin-top: 55px;;
@@ -222,6 +232,7 @@
     }
     .text-container p {
       margin-left: 80px;
+      margin-right: 40px;;
   }
   .text-container h3 {
       margin-left: 80px; 
@@ -254,6 +265,9 @@ input {
 .card-one{
     width: 100%;
 }
+.image-container {
+    margin-right: 50px;
+}
 }
 
 @media (min-width: 1250px) {
@@ -279,11 +293,11 @@ input {
       }
     .text-container p {
         margin-right: 40px;
-        margin-left: 150px;
+        margin-left: 100px;
     }
     .text-container h3 {
         margin-right: 40px;
-        margin-left: 150px; 
+        margin-left: 100px; 
     }
     .form-Labels{
         width: 500px;
@@ -408,10 +422,11 @@ input {
         margin-top: 50px;
     }
     .text-container p { 
-        margin-left: 400px;
+        margin-left: 250px;
+        margin-right: 400px;
     }
     .text-container h3 {
-        margin-left: 400px; 
+        margin-left: 250px; 
     }
     .custom-heightImage-one {
         height: 700px;
@@ -432,6 +447,9 @@ input {
     .response1 {
         display: flex;
         flex-direction: row;
+    }
+    .image-container img{
+        width: 700px;
     }
 }
 
@@ -460,10 +478,10 @@ input {
         margin-right: 0;
     }
     .text-container p { 
-        margin-left: 600px;
+        margin-left: 400px;
     }
     .text-container h3 {
-        margin-left: 600px; 
+        margin-left: 400px; 
     }
     .buttonsProject{
         font-size: 3rem;
