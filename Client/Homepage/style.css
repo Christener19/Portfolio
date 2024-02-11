@@ -220,8 +220,8 @@
 
 @media (min-width: 901px) and (max-width: 1250px) {
     .card-three{
-        margin-top: 200px;
-        margin-bottom: 250px;
+        margin-top: 25px;
+        margin-bottom: 150px;
     }
     .custom-heightImage-one {
       height: 200px;
@@ -295,7 +295,7 @@ h1.monitor-header {
 
 @media (min-width: 1250px) {
     .card-three{
-        margin-top: 35px;
+        margin-top: 55px;
         margin-bottom: 150px;
     }
     .monitor-header{
@@ -425,7 +425,7 @@ h1.monitor-header {
         margin-right: 0;
     }
     .card-three{
-        margin-top: 200px;
+        margin-top: 35px;
         margin-bottom: 250px;
     }
 }
