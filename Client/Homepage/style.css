@@ -91,6 +91,9 @@
     .monitor-header{
         font-size: xx-large;
     }
+    h1.monitor-header {
+        margin-top: 25px;
+    }
     .monitor{
         font-size: large;
        }
@@ -126,14 +129,14 @@
         margin-top: 30px;
         width: 75%;
     }
+    .card-two{
+        margin-top: 65px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px ) {
     .text-container {
         margin-top: 65px;
-        margin-left: 60px;
-        margin-right: 60px;
-      
     }
     .image-container {
         margin-top: 55px;;
@@ -164,6 +167,9 @@
     }
     .monitor-header{
         font-size: xx-large;
+    }
+    h1.monitor-header {
+        margin-top: 50px;
     }
     .monitor{
         font-size: x-large;
@@ -250,6 +256,9 @@ input {
 .monitor-header{
     font-size: x-large;
 }
+h1.monitor-header {
+    margin-top: 50px;
+}
 .monitor{
     font-size: large;
    }
@@ -262,8 +271,10 @@ input {
     width: 100px;
     margin-top: 25px;
 }
-.card-one{
+.card-two{
     width: 100%;
+    margin-top: 155px;
+  
 }
 .image-container {
     margin-right: 50px;
@@ -273,6 +284,9 @@ input {
 @media (min-width: 1250px) {
     .monitor-header{
         font-size: 3rem;
+    }
+    h1.monitor-header {
+        margin-top: 50px;
     }
     .monitor{
         font-size: 1.5rem;
@@ -312,6 +326,7 @@ input {
     .response1 {
         display: flex;
         flex-direction: row;
+        margin-bottom: 200px;
     }
     .navHugeScreen {
         height: 75px;
@@ -334,6 +349,9 @@ input {
     .monitor-header{
         font-size: 4rem;
     }
+    h1.monitor-header {
+        margin-top: 150px;
+    }
     .monitor{
         font-size: 2.5rem;
         line-height: 3rem;
@@ -346,10 +364,13 @@ input {
         font-size: 2.5rem;
         width: 150px;
         margin-top: 25px;
-    } 
+    }
+    .image-container2{
+        width:75%;
+    }
     .custom-heightImage-one {
-        height: 550px;
-        width: 1000px;
+        height: 500px;
+        width: 850px;
       }
     .text-container p {
         margin-left: 250px;
@@ -392,6 +413,9 @@ input {
     .monitor-header{
         font-size: 5.5rem;
         margin-bottom: 50px;
+    }
+    h1.monitor-header {
+        margin-top: 200px;
     }
     .monitor{
         font-size: 3rem;
@@ -457,6 +481,9 @@ input {
     .monitor-header{
         font-size: 7rem;
         margin-bottom: 50px;
+    }
+    h1.monitor-header {
+        margin-top: 200px;
     }
     .monitor{
         font-size: 4.5rem;
