@@ -88,6 +88,10 @@
     .text-container {
         margin-top: 35px;
     }
+    .card-three{
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
     .monitor-header{
         font-size: xx-large;
     }
@@ -120,7 +124,7 @@
         margin-right: 0;
     }
     .form-Labels{
-        width: 265px;   
+        width: 75%;   
     }
     .form-message{
         height: 100px;
@@ -137,6 +141,10 @@
 @media (min-width: 601px) and (max-width: 900px ) {
     .text-container {
         margin-top: 65px;
+    }
+    .card-three{
+        margin-top: 200px;
+        margin-bottom: 250px;
     }
     .image-container {
         margin-top: 55px;;
@@ -211,6 +219,10 @@
 }
 
 @media (min-width: 901px) and (max-width: 1250px) {
+    .card-three{
+        margin-top: 200px;
+        margin-bottom: 250px;
+    }
     .custom-heightImage-one {
       height: 200px;
       width: 325px;
@@ -282,11 +294,15 @@ h1.monitor-header {
 }
 
 @media (min-width: 1250px) {
+    .card-three{
+        margin-top: 200px;
+        margin-bottom: 250px;
+    }
     .monitor-header{
         font-size: 3rem;
     }
     h1.monitor-header {
-        margin-top: 50px;
+        margin-top: 75px;
     }
     .monitor{
         font-size: 1.5rem;
@@ -407,6 +423,10 @@ h1.monitor-header {
     .nav-container .nav-item:last-child {
         margin-right: 0;
     }
+    .card-three{
+        margin-top: 200px;
+        margin-bottom: 250px;
+    }
 }
 
 @media (min-width: 3000px) {
@@ -475,6 +495,10 @@ h1.monitor-header {
     .image-container img{
         width: 700px;
     }
+    .card-three{
+        margin-top: 200px;
+        margin-bottom: 250px;
+    }
 }
 
 @media (min-width: 5000px) {
@@ -537,6 +561,10 @@ h1.monitor-header {
     .response1 {
         display: flex;
         flex-direction: row;
+    }
+    .card-three{
+        margin-top: 500px;
+        margin-bottom: 650px;
     }
 }
 
