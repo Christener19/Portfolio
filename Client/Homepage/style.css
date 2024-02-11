@@ -295,8 +295,8 @@ h1.monitor-header {
 
 @media (min-width: 1250px) {
     .card-three{
-        margin-top: 200px;
-        margin-bottom: 250px;
+        margin-top: 35px;
+        margin-bottom: 150px;
     }
     .monitor-header{
         font-size: 3rem;
@@ -343,6 +343,7 @@ h1.monitor-header {
         display: flex;
         flex-direction: row;
         margin-bottom: 200px;
+        margin-top: 100px;
     }
     .navHugeScreen {
         height: 75px;
