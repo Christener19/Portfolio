@@ -15,7 +15,11 @@
 .custom-rounded { 
     background-color: #0f0f1b;
 }
-
+@media (min-width: 100px) and (max-width:240px){
+    .SP {
+        width: 75px
+    }
+}
 @media (min-width: 100px) and (max-width: 600px) {
     .monitor-header{
         font-size: xx-large;
