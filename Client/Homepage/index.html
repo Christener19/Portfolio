@@ -14,23 +14,26 @@
             <img src="./Images/navbar/menu.png" alt="Menu" class="menu w-6 h-6">
              </button>
             <div class="nav-container lg:flex justify-center items-center">
-        <a href="#home" class="nav-item md:ml-5 text-center text-white monitor font-semibold">Home</a>
-        <a href="#about" class="nav-item text-center text-white monitor font-semibold">About</a>
-        <a href="#projects" class="nav-item text-center text-white monitor font-semibold">Projects</a>
+        <a href="#home" class="nav-item text-white md:ml-5 text-center monitor font-semibold">Home</a>
+        <a href="#about" class="nav-item text-white text-center monitor font-semibold">About</a>
+        <a href="#projects" class="nav-item text-white text-center monitor font-semibold">Projects</a>
         <a href="#contact" class="nav-item text-center text-white monitor font-semibold">Contact</a>
     </div>
     <div class="flex items-center">
-        <a href="https://www.linkedin.com/in/christener19/" target="_blank" class="mr-5">
+        <div class="theme-switcher md:mr-20">
+            <button id="theme-toggle" type="button" class="toggle-btn" onclick="toggleTheme()"></button>
+        </div>
+        <a href="https://www.linkedin.com/in/christener19/" target="_blank" class="mr-5 lg:mr-0">
             <img src="./Images/navbar/linkedIn.png" alt="LinkedIn" class="nav-icon">
         </a>
         <a href="https://github.com/Christener19" target="_blank">
-            <img src="./Images/navbar/Github.png" alt="GitHub" class="nav-icon mr-5">
+            <img src="./Images/navbar/Github.png" alt="GitHub" class="mr-5 lg:mr-0 nav-icon">
         </a>
     </div>
     </nav>
   <main>
     <section class="response1 items-center justify-center w-full h-full">
-        <div class="text-container text-white text-left lg:w-2/3">
+        <div class="text-container   text-left lg:w-2/3">
             <p class="monitor">Hi, my name is</p>
             <h3 class="monitor-header"><strong>Christener Leigh.</strong></h3>
             <br>
@@ -43,13 +46,13 @@
 
 <section id="about" class="card-one card-two flex justify-center items-center w-full h-full">
     <div class="flex flex-col items-center mt-10 w-3/3 px-8 md:w-2/3">
-        <h1 class="response2 monitor-header text-white font-semibold mt-14">About me</h1>
+        <h1 class="response2 monitor-header  font-semibold mt-14">About me</h1>
         <br>
-        <p class="monitor text-white">
+        <p class="monitor ">
             I am a junior full-stack developer based in the United Kingdom, passionate about creating user-friendly web applications. My journey began when I took part in the School of Code bootcamp. Thanks to their free training, I have not only sharpened my skills in both front-end and back-end development but also enhanced my capabilities in planning, teamwork, and problem-solving.
         </p>
         <br>
-        <p class="monitor text-white md:text-xl mt-3">
+        <p class="monitor  md:text-xl mt-3">
            Prior to the bootcamp I went to university as a mature student and graduatued with a 2:1 in Zoology. The course involved a lot of research and data analysis, as well as coding with R for conducting statistical analysis. What I learned there, I have applied to learning new languages and frameworks. Prior to that, I worked as an assistant manager and a line leader where I was responsible for making sure the work environment was positive, whilst ensuring that my team delivered on time and maintained high-quality products.
         </p>
     </div>
@@ -58,8 +61,8 @@
 <section id="projects" class="flex flex-col items-center justify-center mt-24 md:mt-32 lg:mt-44">
     <!----------------CARD-ONE--------------->
     <div class="flex flex-col items-center justify-center mt-10">
-    <h1 class="text-white font-bold monitor-header">Projects</h1>
-    <h6 class="text-white project-name monitor-header sm:mt-5 md:mt-3 lg:hidden mb-5 ">Bootcamp Kitchen</h6>
+    <h1 class=" font-bold monitor-header">Projects</h1>
+    <h6 class=" project-name monitor-header sm:mt-5 md:mt-3 lg:hidden mb-5 ">Bootcamp Kitchen</h6>
 <div class="card-one image-container2 px-8 min-h-64 flex mt-2 lg:mt-10">
     <div class="flex justify-center">
         <div class=" relative inline-block custom-heightImage-one">
@@ -79,17 +82,17 @@
 
 <div class="flex-1 flex flex-col items-start pr-4 lg:px-4 justify-center">
     <div class="project flex justify-center items-center">
-    <p class=" project text-white monitor"><strong>"Bootcamp Kitchen"</strong> focused on encouraging healthy eating among bootcamp participants. It involved stages of ideation, design, and implementation, creating a web-based tool for eating healthily.</p>
+    <p class=" project  monitor"><strong>"Bootcamp Kitchen"</strong> focused on encouraging healthy eating among bootcamp participants. It involved stages of ideation, design, and implementation, creating a web-based tool for eating healthily.</p>
     </div>
     <br>
     <div class="flex">
-        <button id="moreInfoBtn" type="button" class="button text-white rounded-lg h-8 buttonsProject text-left custom-rounded"> More Information</button>
+        <button id="moreInfoBtn" type="button" class="button  rounded-lg h-8 buttonsProject text-left text-white custom-rounded"> More Information</button>
     </div>
 </div>
 </div>
 </div>
  <!------------------CARD-TWO-------------------->
- <h6 class="text-white project-name mt-10 lg:mt-3 font-semibold mb-5 lg:hidden monitor-header">Intern</h6>
+ <h6 class=" project-name mt-10 lg:mt-3 font-semibold mb-5 lg:hidden monitor-header">Intern</h6>
 <div class="card-one image-container2 lg:w-2/3 px-8 min-h-64 flex mt-2 md:mt-10 flex-row-reverse">
     <div class="flex justify-center lg:mt-10">
         <div class="relative inline-block">
@@ -103,7 +106,7 @@
 
     <div class="flex-1 flex flex-col items-start pr-4 justify-center">
         <div class="project flex justify-center items-center">
-        <p class="project text-white mt-3 lg:mt-10 monitor"><strong>"Intern"</strong> is a tool designed to assist coaches in tracking attendance and engagement of bootcamp participants. It
+        <p class="project  mt-3 lg:mt-10 monitor"><strong>"Intern"</strong> is a tool designed to assist coaches in tracking attendance and engagement of bootcamp participants. It
             involved ideation, design, and implementation, aimed at creating an efficient web-based attendance tracking system. </p>
             </div>
             <br>
@@ -113,7 +116,7 @@
         </div>
         </div>
  <!-------------------CARD-THREE-------------------->
- <h6 class="text-white project-name mt-10 lg:mt-3 font-semibold mb-5 lg:hidden monitor-header">Portfolio</h6>
+ <h6 class=" project-name mt-10 lg:mt-3 font-semibold mb-5 lg:hidden monitor-header">Portfolio</h6>
  <div class="card-one card-four image-container2 lg:w-2/3 px-8 min-h-64 flex mt-2 lg:mt-20">
     <div class="flex justify-center ">
         <div class="relative inline-block">
@@ -129,7 +132,7 @@
 
 <div class="flex-1 flex flex-col items-start pr-4 lg:px-4 justify-center">
     <div class="project flex justify-center items-center">
-    <p class="project text-white monitor"><strong>"Christener's Portfolio"</strong> is a mix of different projects where I get to show off what I can do – from being creative to solving tricky problems in tech. </p> <br>
+    <p class="project  monitor"><strong>"Christener's Portfolio"</strong> is a mix of different projects where I get to show off what I can do – from being creative to solving tricky problems in tech. </p> <br>
 </div>
 <br>
 <div class="flex">
@@ -141,24 +144,24 @@
 </section>
 <section id="contact" class="flex flex-col items-center justify-center">
     <div class="card-three flex flex-col items-center justify-center w-full h-full">
-        <h1 class="text-white font-semibold monitor-header">Contact</h1>
+        <h1 class=" font-semibold monitor-header">Contact</h1>
         <form action="https://christeners-portfolio.onrender.com/contact" method="POST" class="flex flex-col items-center w-full">
-            <label for="name" class="text-white mt-3 monitor form-Labels">Name:</label>
-            <input class="form-Labels" type="text" id="name" name="name" required>
+            <label for="name" class=" mt-3 monitor form-Labels">Name:</label>
+            <input class="form-Labels text-black" type="text" id="name" name="name" required>
 
-            <label for="email" class="text-white mt-3 monitor form-Labels">Email:</label>
-            <input class="form-Labels" type="email" id="email" name="email" required>
+            <label for="email" class=" mt-3 monitor form-Labels">Email:</label>
+            <input class="form-Labels text-black" type="email" id="email" name="email" required>
 
-            <label for="message" class="text-white mt-3 monitor form-Labels">Message:</label>
-            <textarea class="form-Labels form-message monitor" id="message" name="message" required></textarea>
+            <label for="message" class=" mt-3 monitor form-Labels">Message:</label>
+            <textarea class="form-Labels text-black form-message monitor" id="message" name="message" required></textarea>
 
-            <button id="sendButton" type="submit" class="buttonsContact rounded-full w-24 contact-button-custom-color text-white font-semibold mt-3">Send</button>
+            <button id="sendButton" type="submit" class="buttonsContact text-white rounded-full w-24 contact-button-custom-color  font-semibold mt-3">Send</button>
         </form>
     </div>
 </section>
 </main>
 <footer class="mb-5">
-   <p class="text-white text-center monitor">Made with 💖 by Christener</p>
+   <p class="text-center monitor">Made with 💖 by Christener</p>
 </footer>
 <script src="main.js"></script>
 <script src="contact.js"></script>
