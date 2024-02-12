@@ -428,7 +428,7 @@ h1.monitor-header {
         margin-bottom: 100px;
     }
     .monitor-header{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     h1.monitor-header {
         margin-top: 40px;
@@ -437,15 +437,15 @@ h1.monitor-header {
         width: 75%;
     }
     .monitor{
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2rem;
        }
     .buttonsProject{
-        font-size: 1.5rem;
+        font-size: 1rem;
         height: 31.25px; 
     }
     .buttonsContact{
-        font-size: 1.5rem;
+        font-size: 1rem;
         width: 100px;
         margin-top: 25px;
     } 
@@ -522,6 +522,9 @@ h1.monitor-header {
 }
 
 @media (min-width: 2000px) {
+    .custom-rounded{
+        height: auto;
+    }
     .theme-switcher{
         margin-right: 450px;
     }
@@ -540,7 +543,7 @@ h1.monitor-header {
        }
     .buttonsProject{
         font-size: 2.5rem;
-        height: 31.25px; 
+
     }
     .buttonsContact{
         font-size: 2.5rem;
@@ -558,8 +561,9 @@ h1.monitor-header {
         width: 850px;
       }
       .text-container{
-        width: 75%;
-     
+        width: 70%;
+        margin-right: 150px;
+        margin-left: 130px;
       }
     .text-container p {
         margin-left: 200px;
@@ -637,8 +641,8 @@ h1.monitor-header {
         margin-top: 200px;
     }
     .monitor{
-        font-size: 4rem;
-        line-height: 3.5rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
        }
        .nav-icon{
         width: 75px;
@@ -656,11 +660,11 @@ h1.monitor-header {
         margin-right: 0;
     }
     .buttonsProject{
-        font-size: 2rem;
+        font-size: 3.5rem;
         height: 62.5px;  
     }
     .buttonsContact{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         width: 175px;
         margin-top: 50px;
     }
@@ -790,7 +794,7 @@ h1.monitor-header {
 
 
 .light-theme {
-    background-color: rgb(224, 219, 219);
+    background-color: rgb(207, 202, 202);
     color: black;
 }
 
