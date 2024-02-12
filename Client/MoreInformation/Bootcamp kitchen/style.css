@@ -6,6 +6,10 @@
     background-color: #2c2836;
     color: white;
 }
+.light-theme {
+    background-color: rgb(207, 202, 202);
+    color: black;
+}
 
 .custom-rounded { 
     background-color: #0f0f1b;
