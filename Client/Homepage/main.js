@@ -1,3 +1,4 @@
+//--------------- NAVBAR OPACITY FOR LARGE SCREENS
 window.addEventListener('scroll', function () {
     let navbar = document.querySelector('.nav-bar-custom-color');
     let scrollThreshold = 10;
@@ -14,7 +15,38 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// ----------------LIGHT AND DARK THEME
+function toggleTheme() {
 
+    let bodyElement = document.body;
+
+    if (bodyElement.classList.contains('homepage-custom-color')) {
+        // If homepage has custom color, switch to light theme
+        bodyElement.classList.remove('homepage-custom-color');
+        bodyElement.classList.add('light-theme');
+
+        localStorage.setItem('theme', 'light');
+    } else {
+        bodyElement.classList.add('homepage-custom-color');
+        bodyElement.classList.remove('light-theme');
+
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    let bodyElement = document.body;
+    if (localStorage.getItem('theme') === 'light') {
+        bodyElement.classList.remove('homepage-custom-color');
+        bodyElement.classList.add('light-theme');
+    } else {
+        bodyElement.classList.add('homepage-custom-color');
+        bodyElement.classList.remove('light-theme');
+    }
+});
+
+
+// ----------------MOBILE NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('nav button[type="button"]');
     const navContainer = document.querySelector('.nav-container');
@@ -45,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 });
 
-
+// -----------------MORE INFORMATION BUTTONS
 let moreInfoBtn = document.getElementById('moreInfoBtn');
 moreInfoBtn.addEventListener('click', function() {
 window.location.href = '../MoreInformation/Bootcamp kitchen/bootcampInfo.html';

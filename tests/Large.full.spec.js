@@ -2,8 +2,10 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Portfolio Navigation', () => {
 
-  test('Navigate to About section', async ({ page }) => {
+
+  test('Navigate to Home and About section', async ({ page }) => {
     await page.goto('https://christeners-portfolio.onrender.com/');
+    await expect(page.locator('div > p:has-text("Hi, my name is")')).toBeVisible();
     await page.getByRole('link', { name: 'About' }).click();
     await page.waitForTimeout(1000);
     await expect(page.locator('#about')).toBeVisible();
