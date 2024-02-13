@@ -49,12 +49,12 @@
         <h2 class="monitor-header font-bold  text-left">Overview</h2>
         <br>
         <p class=" text-left monitor">
-            This was a solo project where I used my newly acquired tech skills to create a portfolio website.
-            </p>
+         This was a solo project where I used my newly acquired tech skills to create a portfolio website. I included testing, responsiveness, and a dark/light mode. I also added a contact form that sends an email directly to my inbox. The project took roughly a month to complete. I used Figma to create wireframes and CSS/Tailwind to style the website. I also used Node.js to set up the backend for the contact form and Playwright for testing. The website is fully responsive and can be viewed on any device. I also added a dark/light mode toggle to the website. This was accomplished using JavaScript and CSS; when the user clicks on the icon, it changes color. I made sure it saves the saves the user's theme preference to local storage, so their selection is remembered when they return to the website by adding a function.
+        </p>
     </div>
 <!----------------------First few days------------------------>
 <div class="flex flex-col items-start justify-start mt-16">
-    <h2 class="monitor-header  text-left font-bold">Day 1:</h2>
+    <h2 class="monitor-header  text-left font-bold">Day 1-2:</h2>
     <br>
     <p class=" text-left monitor"> I started by looking at various online portfolios from people showcasing their art projects, architecture builds, and developer skills. This allowed me to gain some inspiration and ideas for my own portfolio. I then began creating wireframes using Figma, choosing the layout and color palette I was going to use. I knew I wanted to make my app fully responsive and have an option for light/darkmode.
         <br>
@@ -66,14 +66,14 @@
         </div>
 <!----------------------Second few days------------------------>
 <div class="flex flex-col items-start justify-start mt-16">
-    <h2 class="monitor-header  text-left font-bold">Day 2-3:</h2>
+    <h2 class="monitor-header  text-left font-bold">Day 3-4:</h2>
     <br>
     <p class=" text-left monitor">
     I started by deploying a simple 'Hello World!' application using Vercel to ensure continuous deployment. After that, I structured the homepage in HTML and used Tailwind classes to style different sections. While the layout closely followed the wireframes, subtle adjustments to enhance user experience were made. This involved fine-tuning the positioning of elements, refining styling choices, and adjusting font sizes to optimize readability across various devices and screen sizes. For example, I removed the overlay over the image which had an opacity as it was not good for accessibility. To make the navigation bar a bit better, I added icon links, connecting users directly to my professional LinkedIn and GitHub profiles. I knew I needed to add responsiveness too. It was interesting looking at the various screen sizes people could be viewing the website from. This step really highlighted the importance of user-centric designs and the need to ensure that the website is accessible to everyone.
     </p>
 </div>
 <div class="flex flex-col items-start justify-start mt-16">
-    <h2 class="monitor-header  text-left font-bold">Day 4-5:</h2>
+    <h2 class="monitor-header  text-left font-bold">Day 5-8:</h2>
     <br>
     <p class=" text-left monitor">After completing all the different sections, I shifted my focus to the contact section, which allows for direct email communication for users wishing to reach out to me. To achieve this, I added Nodemailer as a dependency, as it enables email exchanges directly from the website. To accomplish this, I set up a POST Create, Read, Update, Delete (CRUD) function, enabling the handling and processing of user inquiries and messages.
     <br>
@@ -81,20 +81,29 @@
      </p>
 </div>
 <div class="flex flex-col items-start justify-start mt-16">
-    <h2 class="monitor-header  text-left font-bold">Day 6-9:</h2>
+    <h2 class="monitor-header  text-left font-bold">Day 9-12:</h2>
     <br>
     <p class=" text-left monitor">
     After the main body of the website was complete, I moved on to the "More Information" sections, which provide a detailed description of the different steps taken to create the websites. This includes images, videos, the issues encountered, and the steps taken to overcome them, the tech stack used, and a general diary of the whole project.
     </p>
     </div>
     <div class="flex flex-col items-start justify-start mt-16">
-        <h2 class="monitor-header  text-left font-bold">Day 10-11:</h2>
-        <br>
-        <p class=" text-left monitor">I decided to practice my testing skills some more so I began by doing an end-end test using playwright, which is a Node.js library to automate interaction with Chromium, Firefox, and WebKit browsers. The test is done as a user would interact with the website, clicking on buttons, filling in forms, and scrolling. This is a great way to ensure that the website is working as expected.
+    <h2 class="monitor-header  text-left font-bold">Day 12-14:</h2>
+    <br>
+    <p class=" text-left monitor">I decided to practice my testing skills some more so I began by doing an end-end test using playwright, which is a Node.js library to automate interaction with Chromium, Firefox, and WebKit browsers. The test is done as a user would interact with the website, clicking on buttons, filling in forms, and scrolling. This is a great way to ensure that the website is working as expected.
             <!-----I also wanted to test the responsivness and the drak/light mode---->
-        </p>
+    </p>
+    <br>
+    <img src="./Images/playwright.png" alt="Playwright Test" class="w-3/3 mx-auto">
+    </div>
+    <br>
+    <!------------------------------DAY 15-20---------------------------->
+    <div class="flex flex-col items-start justify-start mt-16">
+        <h2 class="monitor-header  text-left font-bold">Day 15-20:</h2>
         <br>
-        <img src="./Images/playwright.png" alt="Playwright Test" class="w-3/3 mx-auto">
+        <p class=" text-left monitor">
+        I spent the last few days re-coding my codebase after realizing that Tailwind's "sm:", "md:", and "lg:" breakpoints were not responsive enough. I began by adding various media queries for devices ranging from mobiles to TVs, covering ranges such as 100px-600px up to 5000px+. This ensured that the site would look good on mobile devices as narrow as 240px and on TVs with a pixel width of up to 7000. I also added a dark/light mode toggle to the website. This was accomplished using JavaScript and CSS; when the user clicks on the icon, it changes color. I also added a function that saves the user's theme preference to local storage, so their selection is remembered when they return to the website.
+        </p>
     </div>
     <!-----------------------------END RESULT ----------------------->
     <div class="w-full flex flex-col items-start justify-start mt-16 text-left">
@@ -102,10 +111,10 @@
            <br>
            <br>
            <div class="w-full flex items-center justify-center">
-               <video controls class="w-96 h-96">
-                   <source src="" type="video/mp4">
+            <video controls class="w-96 h-96">
+             <source src="Portfolio video.mp4" type="video/mp4">
                    Your browser does not support the video element.
-               </video>
+            </video>
            </div>
     </div>
             <!--------------------PERSONAL REFLECTIONS------------------------>

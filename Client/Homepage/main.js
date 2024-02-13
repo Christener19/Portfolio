@@ -19,17 +19,18 @@ window.addEventListener('scroll', function () {
 function toggleTheme() {
 
     let bodyElement = document.body;
+    let imageElement = document.querySelector('.images');
 
     if (bodyElement.classList.contains('homepage-custom-color')) {
         // If homepage has custom color, switch to light theme
         bodyElement.classList.remove('homepage-custom-color');
         bodyElement.classList.add('light-theme');
-
+        imageElement.src = "./Images/portfolio/dark-mode.png";
         localStorage.setItem('theme', 'light');
     } else {
         bodyElement.classList.add('homepage-custom-color');
         bodyElement.classList.remove('light-theme');
-
+        imageElement.src = "./Images/portfolio/light-mode.png"
         localStorage.setItem('theme', 'dark');
     }
 }
