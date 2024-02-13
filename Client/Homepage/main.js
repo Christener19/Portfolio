@@ -37,12 +37,15 @@ function toggleTheme() {
 
 document.addEventListener('DOMContentLoaded', () => {
     let bodyElement = document.body;
+    let imageElement = document.querySelector('.images');
     if (localStorage.getItem('theme') === 'light') {
         bodyElement.classList.remove('homepage-custom-color');
         bodyElement.classList.add('light-theme');
+        imageElement.src = "./Images/portfolio/dark-mode.png";
     } else {
         bodyElement.classList.add('homepage-custom-color');
         bodyElement.classList.remove('light-theme');
+        imageElement.src = "./Images/portfolio/light-mode.png";
     }
 });
 
