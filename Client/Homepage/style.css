@@ -166,11 +166,12 @@
        }
     .buttonsProject{
         font-size: medium;
-        height: 31.25px;  
+        padding: 0 10px;
     }
     .buttonsContact{
         font-size: small;
-        width: 50px ;
+        width: 60px ;
+        padding: 2px 2px;
     } 
     .navHugeScreen {
         height: 50px;
@@ -276,7 +277,7 @@
        }
     .buttonsProject{
         font-size: large;
-        height: 31.25px; 
+        padding: 0 10px; 
     }
     .buttonsContact{
         font-size: large;
@@ -403,7 +404,8 @@ h1.monitor-header {
    }
 .buttonsProject{
     font-size: medium;
-    height: 31.25px; 
+    height: 31.25px;
+    padding: 0 10px;
 }
 .buttonsContact{
     font-size: medium;
@@ -422,7 +424,6 @@ h1.monitor-header {
 
 @media (min-width: 1250px) {
     .card-three{
-
         margin-bottom: 150px;
     }
     .card-four{
@@ -443,7 +444,7 @@ h1.monitor-header {
        }
     .buttonsProject{
         font-size: 1rem;
-        height: 31.25px; 
+       padding: 0 10px;
     }
     .buttonsContact{
         font-size: 1rem;
@@ -544,7 +545,7 @@ h1.monitor-header {
        }
     .buttonsProject{
         font-size: 2.5rem;
-
+        padding: 5px 20px;
     }
     .buttonsContact{
         font-size: 2.5rem;
@@ -662,7 +663,7 @@ h1.monitor-header {
     }
     .buttonsProject{
         font-size: 3.5rem;
-        height: 62.5px;  
+        padding: 5px 20px;
     }
     .buttonsContact{
         font-size: 3.5rem;
@@ -740,7 +741,7 @@ h1.monitor-header {
     }
     .buttonsProject{
         font-size: 3rem;
-        height: 125px;  
+        padding: 10px 30px; 
     }
     .buttonsContact{
         font-size: 3rem;
